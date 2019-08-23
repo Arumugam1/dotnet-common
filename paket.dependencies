@@ -1,0 +1,54 @@
+source https://nuget.rba.rackspace.com/nuget
+source https://api.nuget.org/v3/index.json
+
+framework: net461, net45
+
+external_lock http://lockit.devapps.rsi.rackspace.net/automation/dotnet.components.data.v1/paket.lock
+
+nuget automation.components.operations.v1
+nuget automation.components.si.dal.v1
+nuget automation.components.logging.v1
+nuget automation.components.container
+
+nuget Dse 2.3.0
+//These logging packages are needed by Dse, but it specifies the dependency incorrectly
+//Pinning them to 1.0.0 to satisfy the dependency
+nuget Microsoft.Extensions.Logging 1.0.0
+nuget Microsoft.Extensions.Logging.Abstractions 1.0.0
+nuget Microsoft.Extensions.DependencyInjection.Abstractions 1.0.0
+
+nuget Elasticsearch.Net 2.4.1
+nuget etcdnet 1.1.4.2
+nuget FluentCassandra 1.2.6
+nuget Graphite.NET 1.1
+nuget mongocsharpdriver 1.7
+nuget NEST 2.4.1
+nuget StackExchange.Redis.Internal 2.0.0
+
+//Appears to be a custom in house package created in order to provide:
+//Microsoft.Data.Schema.ScriptDom and Microsoft.Data.Schema.ScriptDom.Sql
+nuget SQLSchemaScriptDom 1.0.0.0
+
+nuget System.Collections 4.0.11
+nuget System.Collections.Concurrent 4.0.12
+nuget System.Globalization 4.0.11
+nuget System.Linq 4.1.0
+nuget System.Linq.Dynamic 1.0.7
+nuget System.Linq.Expressions 4.1.0
+nuget System.Reflection 4.1.0
+nuget System.Runtime.Extensions 4.1.0
+nuget System.Runtime.InteropServices 4.1.0
+nuget System.Threading 4.0.11
+
+//Testing Dependencies
+nuget NUnit ~> 2.6
+nuget Moq ~> 4.9
+//Threading Task Extensions are needed by Moq, but Moq doesn't set the dependency versions correctly
+//so pinning this here
+nuget System.Threading.Tasks.Extensions 4.3.0
+//ValueTuple is needed by Moq, but Moq doesn't set the dependency versions correctly
+//so pinning this here
+nuget System.ValueTuple 4.4.0
+
+//Project analyzer
+nuget StyleCop.Analyzers ~> 1.0

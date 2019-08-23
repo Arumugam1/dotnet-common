@@ -1,0 +1,17 @@
+# csharp
+[Bb]in
+[Oo]bj
+[Pp]ublish
+*.dll
+*.suo
+*.user
+.vs/
+
+# ci
+[Pp]ackages
+[Pp]aket-files/
+[Pp]aket.local
+[Pp]aket.bootstrapper.exe
+
+# Test
+[Tt]est[Rr]esult.xml

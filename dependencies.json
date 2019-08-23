@@ -1,0 +1,17 @@
+{
+  "Seed": [
+    "seed.components.dotnet.v1"
+  ],
+  "Internal": [
+    "automation.components.operations.v1",
+    "automation.components.si.dal.v1"
+  ],
+  "External": [
+    "Elasticsearch.Net",
+    "FluentCassandra",
+    "Funq",
+    "Graphite.NET",
+    "mongocsharpdriver",
+    "StackExchange.Redis"
+  ]
+}

@@ -1,0 +1,14 @@
+type project
+id automation.components.data.v1
+version 1.53.0
+authors RBA Devs
+copyright Copyright © Rackspace 2018
+description
+  Common Data layer for DotNet applications
+files
+  bin/Debug/net45/*data.v1.dll ==> lib/net45
+  bin/Debug/net45/*data.v1.pdb ==> lib/net45
+  !bin/Debug/net461/*.xml
+  bin/Debug/net461/*data.v1.dll ==> lib/net461
+  bin/Debug/net461/*data.v1.pdb ==> lib/net461
+include-pdbs true
