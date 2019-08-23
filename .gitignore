@@ -1,0 +1,15 @@
+# csharp
+[Bb]in
+[Oo]bj
+[Pp]ublish
+*.dll
+*.suo
+*.user
+
+# ci
+[Pp]ackages
+
+# Test
+[Tt]est[Rr]esult.xml
+
+.vs/
